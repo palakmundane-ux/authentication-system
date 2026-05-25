@@ -1,0 +1,207 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#111827,#2563eb);
+}
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.auth-box{
+  background:rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  width:320px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  text-align:center;
+  color:white;
+}
+
+.auth-box input{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.auth-box button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#60a5fa;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.auth-box button:hover{
+  background:#2563eb;
+}
+#switchForm{
+
+  cursor:pointer;
+
+  color:#93c5fd;
+
+  font-size:16px;
+
+  margin-top:10px;
+
+  text-decoration:underline;
+}
+#forgotPassword{
+
+  color:#93c5fd;
+
+  cursor:pointer;
+
+  text-decoration:underline;
+}
+
+#popup{
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  height:100%;
+
+  background:rgba(0,0,0,0.7);
+
+  display:none;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.popup-box{
+
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+  width:300px;
+}
+
+.popup-box input{
+
+  padding:10px;
+}
+#successPopup{
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  height:100%;
+
+  background:rgba(0,0,0,0.7);
+
+  display:none;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.success-box{
+
+  background:lightgreen;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  color:black;
+
+  font-size:20px;
+
+  animation:pop 0.5s ease;
+}
+
+@keyframes pop{
+
+  0%{
+    transform:scale(0.5);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+.light-mode{
+
+  background:#f3f4f6;
+}
+
+.light-mode .profile-card{
+
+  background:white;
+
+  color:black;
+}
+
+.light-mode .card{
+
+  background:#e5e7eb;
+
+  color:black;
+}
+.notifications{
+
+  margin-top:30px;
+
+  text-align:left;
+}
+
+.notifications h2{
+
+  margin-bottom:15px;
+}
+
+.notify{
+
+  background:rgba(255,255,255,0.1);
+
+  padding:12px;
+
+  border-radius:10px;
+
+  margin-bottom:10px;
+
+  color:white;
+}

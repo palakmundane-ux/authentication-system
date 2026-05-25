@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Authentication System</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="auth-box">
+
+      <h1>Login 🚀</h1>
+
+      <input type="email" id="username" placeholder="Email">
+
+      <input type="password" id="password" placeholder="Password">
+      <p id="strength"></p>
+
+      <button id="togglePassword">Show Password</button>
+
+      <button id="loginBtn">
+
+  <span id="btnText">Login</span>
+
+</button>
+
+<p id="forgotPassword">Forgot Password?</p>
+
+      <p id="switchForm">Don't have an account? Sign Up</p>
+
+      <p id="message"></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <div id="popup">
+
+  <div class="popup-box">
+
+    <h2>Reset Password</h2>
+
+    <input type="email" placeholder="Enter Email">
+
+    <button onclick="closePopup()">Send Reset Link</button>
+
+  </div>
+
+</div>
+
+<div id="successPopup">
+
+  <div class="success-box">
+
+    <h2>Login Successful 🚀</h2>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
